@@ -5,6 +5,7 @@ export type TeamMember = Membership & { profile: Profile | null };
 export type TaskStatus = "todo" | "doing" | "done";
 export type Task = {
   id: string;
+  team_id: string;
   title: string;
   detail: string | null;
   due_date: string | null;
